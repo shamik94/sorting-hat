@@ -10,7 +10,7 @@ public class Hostel {
 
     private Map<Integer, HostelType> students;
     private static Hostel obj;
-    private final int AVCount, BVCount, ANVCount, BNVCount;
+    private int AVCount, BVCount, ANVCount, BNVCount;
 
     public static Hostel getInstance(Integer capacity) throws CapacityException {
         if (obj==null)
@@ -31,11 +31,29 @@ public class Hostel {
 
     public void register (Integer rollNumber, HostelType hostelType) {
         students.put(rollNumber, hostelType);
+        decreaseCount(hostelType);
         System.out.println("Student is successfully registered: " + rollNumber);
     }
 
     public boolean isRegistered (Integer rollNumber) {
         return students.containsKey(rollNumber);
+    }
+
+    private void decreaseCount(HostelType hostelType) {
+        switch (hostelType) {
+            case AV:
+                AVCount--;
+                break;
+            case BV:
+                BVCount--;
+                break;
+            case ANV:
+                ANVCount--;
+                break;
+            case BNV:
+                BNVCount--;
+                break;
+        }
     }
 
     public boolean isHostelFullForType(HostelType hostelType) {

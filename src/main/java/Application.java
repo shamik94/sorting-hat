@@ -16,7 +16,7 @@ public class Application {
 
         /* Reading the input from text file
         For custom input, create a new file under src/resources */
-        File file = new File("./src/main/resources/input-1.txt");
+        File file = new File("./src/main/resources/input-2.txt");
 
         try {
             Scanner input = new Scanner(file);
