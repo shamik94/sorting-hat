@@ -21,12 +21,12 @@ public class Hostel {
         students = new HashMap<>();
     }
 
-    public void register(Integer rollNumber, HostelType hostelType) {
-        if (students.containsKey(rollNumber)) {
-            System.out.println( "Student is already registered: " + rollNumber);
-            return;
-        }
+    public void register (Integer rollNumber, HostelType hostelType) {
         students.put(rollNumber, hostelType);
-        System.out.println( "Student is successfully registered: " + rollNumber);
+        System.out.println("Student is successfully registered: " + rollNumber);
+    }
+
+    public boolean isRegistered (Integer rollNumber) {
+        return students.containsKey(rollNumber);
     }
 }

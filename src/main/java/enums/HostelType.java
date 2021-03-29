@@ -4,5 +4,6 @@ public enum HostelType {
     AV,
     BV,
     ANV,
-    BNV;
+    BNV,
+    NA;
 }
