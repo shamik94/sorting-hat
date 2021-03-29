@@ -10,13 +10,13 @@ import java.util.stream.Collectors;
 
 public class SortingHatService {
 
-    Hostel hostel;
+    private Hostel hostel;
 
     public SortingHatService (Integer capacity) throws CapacityException {
         hostel = Hostel.getInstance(capacity);
     }
 
-    public void registerStudent(Integer rollNumber, String HostelTypeString) {
+    public void sortAndRegisterStudent(Integer rollNumber, String HostelTypeString) {
         if (hostel.isRegistered(rollNumber)) {
             System.out.println("Student is already registered: " + rollNumber);
             return;

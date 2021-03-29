@@ -39,7 +39,7 @@ public class Application {
                 String hostelTypeString = inputStringArr[2] + inputStringArr[3];
 
                 // Registering Students
-                sortingHatService.registerStudent(rollNumber, hostelTypeString);
+                sortingHatService.sortAndRegisterStudent(rollNumber, hostelTypeString);
             }
             input.close();
 
