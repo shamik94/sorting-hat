@@ -1,16 +1,5 @@
 # sorting-hat 
 
-New students join a school and need to be assigned to one of 4 boarding houses. As students come in,
-they registertheirroll number, class & food preference. There are 2 classes - A and B, and two food
-preferences - V & NV. There are 4 boarding houses with equal but limited capacity. The hat follows a
-first in first out policy with the following rules -
-● Queue will be processed based on the time a studentregistered, first in first out
-● Boarding houses for students who prefer V cannot board NV students
-● Boarding houses for class A would be separate from boarding houses for class B
-● Once all boarding houses are filled up to capacity, no more students can be allocated.
-● Otherrules
-○ Roll numberis a 4 digit integer unique to each student
-○ Student can only be registered once, duplicate commands for same student may be
-ignored
-
+![Screen Shot 2021-05-23 at 1 48 16 AM](https://user-images.githubusercontent.com/8223631/119239794-ff59cc00-bb68-11eb-8e57-0621e437b96e.png)
+![Screen Shot 2021-05-23 at 1 48 24 AM](https://user-images.githubusercontent.com/8223631/119239796-02ed5300-bb69-11eb-874d-816b3e3c2e33.png)
 
